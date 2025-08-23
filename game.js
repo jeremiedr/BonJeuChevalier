@@ -314,6 +314,10 @@ if (window.allSprites && allSprites.autoDraw !== undefined) {
 } else if (window.world && world.autoDraw !== undefined) {
   world.autoDraw = false;          // API p5play v3
 }
+// Désactiver le dessin auto de p5play
+if (window.world && world.autoDraw !== undefined) world.autoDraw = false;  // v3
+if (window.allSprites && allSprites.autoDraw !== undefined) allSprites.autoDraw = false; // compat v2
+
   // Joueur
   box = new Sprite();
   box.x = 500;
@@ -701,15 +705,22 @@ function draw() {
   // Caméra
   camera.x = box.x;
   camera.y = box.y;
-  // Dessine explicitement le monde maintenant
-  if (window.allSprites && allSprites.draw) {
-    allSprites.draw();               // p5play v2 / compat
-  } else if (window.world && world.draw) {
-    world.draw();                    // p5play v3
+
+  // Si fin de partie, dessine l’écran de fin et stoppe cette frame
+  if (box.y > 1000 || box.vies <= 0) { 
+    gameOver(); 
+    return; 
   }
-  postProcess();
-  // Conditions de fin
-  if (box.y > 1000 || box.vies <= 0) gameOver();
+
+  // Dessiner explicitement le monde AVANT le HUD
+  if (window.world && world.draw) {
+    world.draw();         // p5play v3
+  } else if (window.allSprites && allSprites.draw) {
+    allSprites.draw();    // compat
+  }
+
+// HUD en dernier, donc par-dessus tout
+postProcess();
 }
 
 /* ================================ HUD/POST ================================ */
@@ -732,8 +743,8 @@ function postProcess() {
   textAlign(LEFT, TOP);
   text('coins: ' + box.coins, 5, 5);
   text('vies: ' + box.vies, 5, 22);
-  text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
-  text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
+  //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
+  //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
 
   // Panneau d’infos centré (optionnel)
   if (box.overlapping(sign)) {
