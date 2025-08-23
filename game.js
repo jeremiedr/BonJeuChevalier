@@ -702,30 +702,34 @@ function draw() {
   for (let fruit of fruits) if (box.overlaps(fruit)) { fruit.remove(); box.vies++; if (eatSound)  eatSound.play(); }
   for (let coin  of coins)  if (box.overlaps(coin))  { coin.remove(); box.coins++; if (coinSound) coinSound.play(); }
 
- // Caméra
+// Caméra : centre sur le joueur
 camera.x = box.x;
 camera.y = box.y;
 
 // Fin de partie ?
-if (box.y > 1000 || box.vies <= 0) { 
+if (box.y > 1000 || box.vies <= 0) {
   gameOver();
   return;
 }
 
-// >>> ACTIVER la caméra, dessiner le monde, puis revenir à l'état précédent
-push();
-camera.on();
-// Activer la caméra, dessiner le monde, puis l'éteindre proprement
-camera.on();
-if (world?.draw) {
-  world.draw();          // p5play v3
-} else if (allSprites?.draw) {
-  allSprites.draw();     // compat v2
-}
-camera.off();
-pop();
+// ---- DESSIN DU MONDE AVEC LA CAMÉRA ----
+if (world?.autoDraw) world.autoDraw = false; // au cas où
 
-// HUD en dernier (dessiné en coordonnées écran)
+camera.on();
+
+// 1) Tuiles (certaines versions exigent de les dessiner explicitement)
+if (typeof tiles?.draw === 'function') tiles.draw();
+
+// 2) Sprites & groupes
+if (typeof allSprites?.draw === 'function') {
+  allSprites.draw();            // v2/v3: dessine tous les sprites
+} else if (typeof world?.draw === 'function') {
+  world.draw();                 // fallback (certaines builds)
+}
+
+camera.off();
+
+// ---- HUD (dessiné en coordonnées écran, au-dessus du monde) ----
 postProcess();
 }
 
