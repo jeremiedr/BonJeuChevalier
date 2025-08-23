@@ -418,7 +418,7 @@ if (window.Canvas) {
   sign.spriteSheet = worldImage;
   sign.addAni({ col: 8, row: 3, w: 16, h: 16 });
   sign.tile = 'E';
-  sign.message1 = 'RAMASSEZ TOUS LES COINS — DOUBLE SAUT (↑). M=Mute';
+  sign.message1 = 'RAMASSEZ TOUS LES COINS';
 
   bush = new Group();
   bush.collider = 'none';
