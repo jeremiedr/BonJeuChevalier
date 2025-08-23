@@ -2,16 +2,18 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mon platformer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BonJeuChevalier</title>
   <style>html,body{margin:0;padding:0;background:#222;}</style>
 </head>
 <body>
-  <!-- Librairies -->
+  <!-- p5 d'abord -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <!-- puis p5.sound (obligatoire pour loadSound/userStartAudio) -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
-  <script src="https://p5play.org/v3/p5play.js"></script>
-  <!-- Ton code -->
-  <script src="game.js"></script>
+  <!-- puis p5play v3 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5play@3.23.3/p5play.min.js"></script>
+  <!-- ton jeu en dernier -->
+  <script defer src="game.js"></script>
 </body>
 </html>
