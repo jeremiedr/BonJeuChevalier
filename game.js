@@ -309,14 +309,14 @@ if (window.Canvas) {
   if (c && c.elt) c.elt.style.imageRendering = 'pixelated';
 }
 // Empêche p5play de dessiner après ton code
-if (window.allSprites && allSprites.autoDraw !== undefined) {
-  allSprites.autoDraw = false;     // API p5play v2/v3 (certaines builds)
-} else if (window.world && world.autoDraw !== undefined) {
-  world.autoDraw = false;          // API p5play v3
-}
+//if (window.allSprites && allSprites.autoDraw !== undefined) {
+//  allSprites.autoDraw = false;     // API p5play v2/v3 (certaines builds)
+//} else if (window.world && world.autoDraw !== undefined) {
+ // world.autoDraw = false;          // API p5play v3
+//}
 // Désactiver le dessin auto de p5play
-if (window.world && world.autoDraw !== undefined) world.autoDraw = false;  // v3
-if (window.allSprites && allSprites.autoDraw !== undefined) allSprites.autoDraw = false; // compat v2
+//if (window.world && world.autoDraw !== undefined) world.autoDraw = false;  // v3
+//if (window.allSprites && allSprites.autoDraw !== undefined) allSprites.autoDraw = false; // compat v2
 
   // Joueur
   box = new Sprite();
@@ -736,7 +736,7 @@ function draw() {
 /* ================================ HUD/POST ================================ */
 
 function postProcess() {
-  text('cam: ' + nf(camera.x,1,1) + ',' + nf(camera.y,1,1), 5, 73);
+  
   push();
   camera.off();          // ← désactive la transform de caméra pour dessiner en écran
   noStroke();
@@ -752,8 +752,8 @@ function postProcess() {
   textAlign(LEFT, TOP);
   text('coins: ' + box.coins, 5, 5);
   text('vies: ' + box.vies, 5, 22);
-  text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
-  text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
+  //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
+  //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
 
   // Panneau d’infos centré (optionnel)
   if (box.overlapping(sign)) {
