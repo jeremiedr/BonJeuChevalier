@@ -570,6 +570,7 @@ function draw() {
       setTimeout(() => box.changeAni('idle'), 500);
       box.vies -= 1;
     }
+  
   }
 
   /* --- TIREURS violets --- */
@@ -695,7 +696,7 @@ function draw() {
   // Caméra
   camera.x = box.x;
   camera.y = box.y;
-
+  postProcess();
   // Conditions de fin
   if (box.y > 1000 || box.vies <= 0) gameOver();
 }
@@ -703,18 +704,33 @@ function draw() {
 /* ================================ HUD/POST ================================ */
 
 function postProcess() {
-  // --- Niveau actuel + bombes en haut à droite ---
-  textAlign(RIGHT);
-  text('niveau ' + (currentLevel + 1) + '/' + levels.length, width - 5, 12);
+  push();
+  camera.off();          // ← désactive la transform de caméra pour dessiner en écran
+  noStroke();
+  fill(255);             // texte blanc
+  textSize(12);
+
+  // --- HUD haut droite ---
+  textAlign(RIGHT, TOP);
+  text('niveau ' + (currentLevel + 1) + '/' + levels.length, width - 5, 5);
   text('bombes: ' + bombs, width - 5, 22);
 
-  // --- HUD gauche ---
-  textAlign(LEFT);
-  text('coins: ' + box.coins, 5, 12);
+  // --- HUD haut gauche ---
+  textAlign(LEFT, TOP);
+  text('coins: ' + box.coins, 5, 5);
   text('vies: ' + box.vies, 5, 22);
-  text('sauts: ' + Math.max(0, jumpsLeft), 5, 32);
-  text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 42);
+  text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
+  text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
+
+  // Panneau d’infos centré (optionnel)
+  if (box.overlapping(sign)) {
+    textAlign(CENTER, CENTER);
+    text(sign.message1, width / 2, height / 2 + 20);
+  }
+
+  pop();
 }
+
 
 /* ================================= BOMBE ================================= */
 
