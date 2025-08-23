@@ -743,8 +743,8 @@ function postProcess() {
   textAlign(LEFT, TOP);
   text('coins: ' + box.coins, 5, 5);
   text('vies: ' + box.vies, 5, 22);
-  //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
-  //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
+  text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
+  text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
 
   // Panneau d’infos centré (optionnel)
   if (box.overlapping(sign)) {
