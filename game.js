@@ -702,24 +702,27 @@ function draw() {
   for (let fruit of fruits) if (box.overlaps(fruit)) { fruit.remove(); box.vies++; if (eatSound)  eatSound.play(); }
   for (let coin  of coins)  if (box.overlaps(coin))  { coin.remove(); box.coins++; if (coinSound) coinSound.play(); }
 
-  // Caméra
-  camera.x = box.x;
-  camera.y = box.y;
+ // Caméra
+camera.x = box.x;
+camera.y = box.y;
 
-  // Si fin de partie, dessine l’écran de fin et stoppe cette frame
-  if (box.y > 1000 || box.vies <= 0) { 
-    gameOver(); 
-    return; 
-  }
+// Fin de partie ?
+if (box.y > 1000 || box.vies <= 0) { 
+  gameOver();
+  return;
+}
 
-  // Dessiner explicitement le monde AVANT le HUD
-  if (window.world && world.draw) {
-    world.draw();         // p5play v3
-  } else if (window.allSprites && allSprites.draw) {
-    allSprites.draw();    // compat
-  }
+// >>> ACTIVER la caméra, dessiner le monde, puis revenir à l'état précédent
+push();
+camera.on();
+if (window.world && world.draw) {
+  world.draw();          // p5play v3
+} else if (window.allSprites && allSprites.draw) {
+  allSprites.draw();     // compat
+}
+pop();
 
-// HUD en dernier, donc par-dessus tout
+// HUD en dernier (dessiné en coordonnées écran)
 postProcess();
 }
 
