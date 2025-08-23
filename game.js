@@ -293,7 +293,21 @@ const DASH_SPEED = 6;
 const DASH_DURATION_MS = 500;
 
 function setup() {
-  new Canvas(innerWidth / 4, innerHeight / 4, 'pixelated x4');
+  // Canvas p5play si dispo, sinon fallback p5
+const w = Math.floor(innerWidth / 4);
+const h = Math.floor(innerHeight / 4);
+
+if (window.Canvas) {
+  new Canvas(w, h, 'pixelated x4');                    // p5play v3 (Canvas global)
+} else if (window.p5play && window.p5play.Canvas) {
+  new window.p5play.Canvas(w, h, 'pixelated x4');       // certaines builds exposent via p5play.Canvas
+} else {
+  // Fallback p5 « pur » — rendu pixel-art
+  const c = createCanvas(w, h);
+  pixelDensity(1);
+  noSmooth();
+  if (c && c.elt) c.elt.style.imageRendering = 'pixelated';
+}
 
   // Joueur
   box = new Sprite();
