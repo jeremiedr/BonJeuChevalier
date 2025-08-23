@@ -736,7 +736,7 @@ postProcess();
 /* ================================ HUD/POST ================================ */
 
 function postProcess() {
-  
+  text('cam: ' + nf(camera.x,1,1) + ',' + nf(camera.y,1,1), 5, 73);
   push();
   camera.off();          // ← désactive la transform de caméra pour dessiner en écran
   noStroke();
