@@ -308,7 +308,12 @@ if (window.Canvas) {
   noSmooth();
   if (c && c.elt) c.elt.style.imageRendering = 'pixelated';
 }
-
+// Empêche p5play de dessiner après ton code
+if (window.allSprites && allSprites.autoDraw !== undefined) {
+  allSprites.autoDraw = false;     // API p5play v2/v3 (certaines builds)
+} else if (window.world && world.autoDraw !== undefined) {
+  world.autoDraw = false;          // API p5play v3
+}
   // Joueur
   box = new Sprite();
   box.x = 500;
@@ -696,6 +701,12 @@ function draw() {
   // Caméra
   camera.x = box.x;
   camera.y = box.y;
+  // Dessine explicitement le monde maintenant
+  if (window.allSprites && allSprites.draw) {
+    allSprites.draw();               // p5play v2 / compat
+  } else if (window.world && world.draw) {
+    world.draw();                    // p5play v3
+  }
   postProcess();
   // Conditions de fin
   if (box.y > 1000 || box.vies <= 0) gameOver();
@@ -704,6 +715,8 @@ function draw() {
 /* ================================ HUD/POST ================================ */
 
 function postProcess() {
+  fill(255, 0, 0);
+  rect(width-60, 0, 60, 20);
   push();
   camera.off();          // ← désactive la transform de caméra pour dessiner en écran
   noStroke();
