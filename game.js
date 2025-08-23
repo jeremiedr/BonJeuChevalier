@@ -729,8 +729,7 @@ postProcess();
 /* ================================ HUD/POST ================================ */
 
 function postProcess() {
-  fill(255, 0, 0);
-  rect(width-60, 0, 60, 20);
+  
   push();
   camera.off();          // ← désactive la transform de caméra pour dessiner en écran
   noStroke();
