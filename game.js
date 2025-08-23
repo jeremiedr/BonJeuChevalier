@@ -715,11 +715,14 @@ if (box.y > 1000 || box.vies <= 0) {
 // >>> ACTIVER la caméra, dessiner le monde, puis revenir à l'état précédent
 push();
 camera.on();
-if (window.world && world.draw) {
+// Activer la caméra, dessiner le monde, puis l'éteindre proprement
+camera.on();
+if (world?.draw) {
   world.draw();          // p5play v3
-} else if (window.allSprites && allSprites.draw) {
-  allSprites.draw();     // compat
+} else if (allSprites?.draw) {
+  allSprites.draw();     // compat v2
 }
+camera.off();
 pop();
 
 // HUD en dernier (dessiné en coordonnées écran)
