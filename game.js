@@ -65,22 +65,22 @@ let level3 = [
 /* ------------ NIVEAUX 4–5 ---------------- */
 
 let level4 = [
-  '                                                                                   ',
-  '                   c         c         c                 E                          ',
-  '         S       PPPP     PPPPPPPP   PPPPPP          PPPPP                          ',
-  '                iiii       iiii        iiii                 c                       ',
-  '       z  ggggggddddgggggggddddggg  ggddddggggggg F     S         p                 ', // +1 z
-  '        gddddddddddddddddddddddddd  ddddddddddddddgg          z     PPP             ', // +2
-  '      gddddd    c     S     c     S     c     dddddg         c     z  c            ', // +3
-  '    gddd F PPPPPPP        PPPPP        PPPPP        dddg   PPPPPP   PPPPPP          ',
-  '   gdd   iiii   iiiii  iiii   iiiii  iiii   iiiii    ddg        iiii       S       ',
-  '  gdd  c      c      cc     c      cc     c      c    ddg   z  c      c            ', // +4 total
-  ' gdd      S        S      S       S      S        S     ddg    S   S   S     F     ',
-  ' gdd   PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP   ddg  PPPPPPPPPPP          ',
-  ' gdd       iiii      iiii      iiii      iiii      iiii   ddg                       ',
-  ' gddd   c      c  c      c  c      c  c      c  c      c  dddg          M          ',
-  ' gddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddggggggggggggggggggggg ',
-  ' dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd ',
+  '                                                                                    ',
+  '                                                                                    ',
+  '                                                                                    ',
+  '                                                                                    ',
+  '                                                                                    ', 
+  '                                                                                    ', 
+  '                                                                                    ', 
+  '                                                                                    ',
+  '                                                                                    ',
+  '                                                                                    ', 
+  '              c                                                                     ',
+  '                                                                                    ',
+  'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
+  '                                                                                    ',
+  '                                                                                    ',
+  '                                                                                    ',
 ];
 
 let level5 = [
