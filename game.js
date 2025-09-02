@@ -73,14 +73,14 @@ let level4 = [
   '                                                                                    ', 
   '                                                                                    ', 
   '                                                                                    ',
-  '                                                                                    ',
-  '                                                                                    ', 
-  '              c                                                                     ',
-  '                                                                                    ',
+  '                                                                gggggggggggg        ',
+  '                                                     gggggggggggddddddddddddgggggggg', 
+  '              c                            ggggggggggddddddddddddddddddddddddddddddd',
+  'gggggggggggggggggggggggggggggggggggggggggggddddddddddddddddddddddddddddddddddddddddd',
   'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
-  '                                                                                    ',
-  '                                                                                    ',
-  '                                                                                    ',
+  'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
+  'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
+  'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
 ];
 
 let level5 = [
