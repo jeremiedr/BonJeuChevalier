@@ -66,9 +66,9 @@ let level3 = [
 
 let level4 = [
   '  c                                                                   ccc           ',
-  '  P                                              cc                  PPPPPP         ',
-  '                           PPPP     PPPPPP    PPPPP                                 ',
-  '             P              c  z                                                    ',
+  '  P                                      z       cc                  PPPPPP         ',
+  '                           PPPPP    PPPPPP    PPPPP                                 ',
+  '             P              c                                                       ',
   '    c                P      PPPPP                                                   ', 
   '    P   g     g                                                                     ', 
   '        d     d                         PPP                             ccc         ', 
