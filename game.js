@@ -84,23 +84,20 @@ let level4 = [
 ];
 
 let level5 = [
-  '                                                                                   ',
-  '                         S       c       c       c     c F                         ',
-  '                         PPPPP t      PPPPP    PPPPP   PPPPP                        ',
-  '                 S                                   S                 S            ', // +1
-  '            PPPPP    c   PPPPPPPPPPPPPPPPPP    c   PPPPP    c   PPPPP              ',
-  '         iiii   iiii     iiii   iiii     iiii   iiii     iiii   iiii        z      ', // +2
-  '      PPP            PPP            PPP            PPP            PPP               ',
-  '        z     c   S          c   S          c   S          c   S   z             z  ', // +4
-  '   p     PPPPPPPPPPP  PPPPPPPPPPP  PPPPPPPPPPP  PPPPPPPPPPP  PPPPPPPPPPP           ',
-  '             iiii        iiii        iiii        iiii        iiii                  ',
-  '     c   c         c  c        c  c        c  c        c  c        c              ',
-  '        S     S     S     S     S     S     S     S     S     S     S             ',
-  '   PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP           ',
-  '      z  c        c     F  c        c        c        c        c        c   F  z  ', // +6 total
-  ' gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg        ',
-  ' ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd        ',
-];
+  
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+	'                                               c                                   ',
+	'                                                                                   ',
+	'                                                                                   ',
+];	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
 
 /* ------------ NIVEAUX 6–10 ---------------- */
 
