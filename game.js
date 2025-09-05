@@ -98,9 +98,9 @@ let level5 = [
 	'dMd      ccc             ddddddddddddddd ddddddddddddddddddddddddddddddddddcdddddddd',
 	'dddddcdddddddddddddd     ddddddddddddddd ddddddddddddddddddddddddddddddddddcdddddddd',
 	'dddddcddddddddddddddd    cccccccccccccccccccccccccccccccccccccccccccccccc   dddddddd',
-	'dddddcddddddddddddddddddddddddddddddddddvddddddddddddddddddddddddddddddddddMdddddddd',
-	'dddddcvdddddddddddddddzzzzzzzzzzzzzzzzzdvdzzzzzzzzzzzzzzzzdvdzzzzzzzdddddddddddddddd',
-	'dddddM     Fddddddddddddddddddddddddddddvddddddddddddddddddddddddddddddddddddddddddd',
+	'dddddcdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddMdddddddd',
+	'dddddcddddddddddddddddzzzzzzzzzzzzzzzzzdddzzzzzzzzzzzzzzzzdddzzzzzzzdddddddddddddddd',
+	'dddddM     Fdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
 	'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
 	
 ];
