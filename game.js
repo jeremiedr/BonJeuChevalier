@@ -84,22 +84,26 @@ let level4 = [
 ];
 
 let level5 = [
-	'                                                                                   ',
- 	'                   cFc                                                             ',
-	'                                                                                   ',
-	'                 gggggg                                                            ',
-	'               ggddddddgg                                                          ',
-	'             ggddddddddddgg                                                        ',
-	'             dddddddddddddd                                                        ',
-	'             dddddddddddddd                                                        ',
-	'            gddddddddddddddg                                                       ',
-	'ggggggMgggggddddddddddddddddgggMggggggggggggggggggggggggggggggggggggggggggggggggggg',
-	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
-	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
-	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
-	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
-];	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
-
+	'                                                                          cccccz    ',
+ 	'                    cFc                                                   PPPPPP    ',
+	'                    f                                            P                  ',
+	'                  gggggg                                                  PPP       ',
+	'              B ggddddddgg                         P                                ',
+	'              ggddddddddddgg                                              g g       ',
+	'              dddddddddddddd                                              d g       ',
+	'              ddddc                            B  ggggg   f               d d       ',
+	'             gddddc   ddddddg        f      ggggggdddddggggggg            d d       ',
+	'gggggggMgggggddddddd  dddddddgggMgggggggggggddddddddddddddddddggggggggggggdcdggggggg',
+	'dddddddddddddddddddd  dddddddddddddddddddddddddddddddddddddddddddddddddddddcdddddddd',
+	'dMd      ccc             ddddddddddddddddddddddddddddddddddddddddddddddddddcdddddddd',
+	'dddddcdddddddddddddd     ddddddddddddddddddddddddddddddddddddddddddddddddddcdddddddd',
+	'dddddcddddddddddddddd    cccccccccccccccccccccccccccccccccccccccccccccccc   dddddddd',
+	'dddddcdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddMdddddddd',
+	'dddddc dddddddddddddddzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzdddddddddddddddd',
+	'dddddM     Fdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
+	'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd',
+	
+];
 /* ------------ NIVEAUX 6–10 ---------------- */
 
 let level6 = [
