@@ -93,7 +93,7 @@ let level5 = [
 	'              dddddd       d                                                        ',
 	'              ddddc   b                        b  gg  gg  f                         ',
 	'  f          gddddc   ggggggg        f gcg  ggggggdd Sddgggggg    b                 ',
-	'gggggggMgggggdddddgg  dddddddggggggggggdXdggdddddddd gddddddddgggXgggggggggXggggggg',
+	'gggggggMgggggdddddgg  dddddddggggggggggdXdggdddddddd gddddddddgggXgggggggggXgggggggg',
 	'dddddddddddddddddddd  ddddddddddddddddddxddddddddddd  dddddddddddxxxxxxFFddcdddddddd',
 	'dzd      ccc            ddddddddddddddddxdddddddddddcFdddddddddddddddddggddcdddddddd',
 	'dgdggcgggggggggggggg     dddddddddddddddxddddddddddddddddddddddddddddddddddcdddddddd',
@@ -107,25 +107,24 @@ let level5 = [
 	'ddddccMdddddddddddddddxxxxxxxddddddddddddddddxxxxxxxxxxcxddddddddddddddddddddddddddd',
 	'ddddccdddddddddddddddddddddxxxxxxxxxxxxxxxxxxxxdddddddddxddddddddddddddddddddddddddd',
 	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddxddddddddddddddddddddddddddd',
+	'                                                                                    ',
 	
 ];
 /* ------------ NIVEAUX 6–10 ---------------- */
 
 let level6 = [
-  '                                                                                   ',
-  '        z    c      c        c             c         c                         z   ', // +2
-  '        PPPPPPP  PPPPPPP  PPPPPPP    PPPPPPP   PPPPPPP   PPPP                       ',
-  '                 iiii         iiii      iiii      iiii                             ',
-  '   z     S     gddddgggggggggddddgggggggddddggggggddddg       S                z    ', // +4
-  '             gdddddddddddddddddddddddddddddddddddddddddgg                           ',
-  '    c  z  gddd   c   S   c      c     S     c   S   c   ddg    c         c         ', // +5
-  '   PPPP  gdd    PPPPPPP      PPPPP         PPPPP      PPP  dg  PPPP    PPPP        ',
-  '         gdd   iiii   iiii  iiii   iiii  iiii   iiii        dg        iiii         ',
-  '    S    gdd c     c     c c    c     c c    c     c   c    dg   S          z      ', // +6 total
-  '   PPPP  gdd    S     S      S     S      S     S      S    dg  PPPP    F          ',
-  'F        gddd  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP                  F          ',
-  '          gddddddddddddddddddddddddddddddddddddddddddddddgggggggggggggggggggggg     ',
-  '           ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd      ',
+	'                                                                                                                             ',
+	'                                                                                                                             ',
+	'                                                                                                                             ',
+	'                                                                                                                             ',
+	'                                                    c                                                                        ',
+	'                                                                                                                             ',
+	'                                                                              RRRRRRRRRR                                     ',
+	'                      RRRRRRRRRRRRRRR                              RRRRRRRRRRRrrrrrrrrrrRRRR                                 ',
+	'RRRRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR',
+	'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+	'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
+	'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
 ];
 
 let level7 = [
@@ -382,6 +381,20 @@ if (window.Canvas) {
   grass.spriteSheet = worldImage;
   grass.addAni({ col: 0, row: 0, w: 16, h: 16 });
   grass.tile = 'g';
+
+  Fakerock = new Group();
+  Fakerock.collider = 'none';
+  Fakerock.w = 16; Fakerock.h = 16;
+  Fakerock.spriteSheet = worldImage;
+  Fakerock.addAni({ col: 1, row: 2, w: 16, h: 16 });
+  Fakerock.tile = 'V';
+
+  fakerock = new Group();
+  fakerock.collider = 'none';
+  fakerock.w = 16; fakerock.h = 16;
+  fakerock.spriteSheet = worldImage;
+  fakerock.addAni({ col: 2, row: 2, w: 16, h: 16 });
+  fakerock.tile = 'v';
 
   Fakegrass = new Group();
   Fakegrass.collider = 'none';
