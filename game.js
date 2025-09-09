@@ -88,7 +88,7 @@ let level5 = [
  	'                    cFc          f      z  S                                 PPP    ',
 	'                S   f        PPPPPPPPPPPPPPPP                    P        PPP       ',
 	'                  gggggg                                                            ',
-	'              b ggddddddgg                         P                      g g       ',
+	'              b ggddddddgg    XXXXXXXXXXXXXX       P                      g g       ',
 	'              ggddddddddddgg                                              d d       ',
 	'              dddddd       d                                             cd d       ',
 	'              ddddc   b                        b  gg  gg  f               d d       ',
@@ -382,6 +382,13 @@ if (window.Canvas) {
   grass.spriteSheet = worldImage;
   grass.addAni({ col: 0, row: 0, w: 16, h: 16 });
   grass.tile = 'g';
+
+  fakegrass = new Group();
+  fakegrass.collider = 'none';
+  fakegrass.w = 16; bush.h = 16;
+  fakegrass.spriteSheet = worldImage;
+  fakegrass.addAni({ col: 0, row: 0, w: 16, h: 16 });
+  fakegrass.tile = 'X';
 
   sand = new Group();
   sand.collider = 'static';
