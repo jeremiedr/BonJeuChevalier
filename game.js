@@ -387,14 +387,14 @@ if (window.Canvas) {
   Fakegrass.collider = 'none';
   Fakegrass.w = 16; Fakegrass.h = 16;
   Fakegrass.spriteSheet = worldImage;
-  Fakegrass.addAni({ col: 0, row: 1, w: 16, h: 16 });
+  Fakegrass.addAni({ col: 0, row: 0, w: 16, h: 16 });
   Fakegrass.tile = 'X';
 
   fakegrass = new Group();
   fakegrass.collider = 'none';
   fakegrass.w = 16; fakegrass.h = 16;
   fakegrass.spriteSheet = worldImage;
-  fakegrass.addAni({ col: 0, row: 2, w: 16, h: 16 });
+  fakegrass.addAni({ col: 0, row: 1, w: 16, h: 16 });
   fakegrass.tile = 'x';
 
 
