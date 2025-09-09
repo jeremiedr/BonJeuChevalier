@@ -85,14 +85,14 @@ let level4 = [
 
 let level5 = [
 	'                                      ccc                                 cccccz    ',
- 	'                    cFc           S    z   S                              PPPPPP    ',
-	'                    f             PPPPPPPPPPP                    P                  ',
+ 	'                    cFc                 z  S                              PPPPPP    ',
+	'                S   f        PPPPPPPPPPPPPPPP                    P                  ',
 	'                  gggggg                                                  PPP       ',
 	'              B ggddddddgg                         P                      g g       ',
 	'              ggddddddddddgg                                              d d       ',
 	'              dddddddddddddd                                             cd g       ',
 	'              ddddc                            B  ggggg   f               d d       ',
-	'             gddddc   ddddddg        f      ggggggdddddggggggg            d d       ',
+	'             gddddc   ggggggg        f      ggggggdddddggggggg            d d       ',
 	'gggggggMgggggddddddd  dddddddgggMggggggg gggddddddddddddddddddggggggggggggdcdggggggg',
 	'dddddddddddddddddddd  dddddddddddddddddd ddddddddddddddddddddddddddddddddddcdddddddd',
 	'dzd      ccc            dddddddddddddddd ddddddddddddddddddddddddddddddddddcdddddddd',
