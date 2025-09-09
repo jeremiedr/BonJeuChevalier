@@ -88,12 +88,12 @@ let level5 = [
  	'                    cFc          f      z  S                                 PPP    ',
 	'                S   f        PPPPPPPPPPPPPPPP                    P        PPP       ',
 	'                  gggggg                                                            ',
-	'              b ggddddddgg    XXXXXXXXXXXXXX       P                      g g       ',
+	'              b ggddddddgg                         P                      g g       ',
 	'              ggddddddddddgg                                              d d       ',
 	'              dddddd       d                                             cd d       ',
 	'              ddddc   b                        b  gg  gg  f               d d       ',
 	'  f          gddddc   ggggggg        f      ggggggdd Sddgggggg    b       d d       ',
-	'gggggggMgggggdddddgg  dddddddggggggggggg gggdddddddd gddddddddggggggggggggdcdggggggg',
+	'gggggggMgggggdddddgg  dddddddgggggggggggXgggdddddddd gddddddddggggggggggggdcdggggggg',
 	'dddddddddddddddddddd  dddddddddddddddddd ddddddddddd  dddddddddddddddddddddcdddddddd',
 	'dzd      ccc            dddddddddddddddd dddddddddddcFdddddddddddddddddddddcdddddddd',
 	'dgdggcgggggggggggggg     ddddddddddddddd ddddddddddddddddddddddddddddddddddcdddddddd',
@@ -383,12 +383,20 @@ if (window.Canvas) {
   grass.addAni({ col: 0, row: 0, w: 16, h: 16 });
   grass.tile = 'g';
 
+  Fakegrass = new Group();
+  Fakegrass.collider = 'none';
+  Fakegrass.w = 16; fakegrass.h = 16;
+  Fakegrass.spriteSheet = worldImage;
+  Fakegrass.addAni({ col: 0, row: 1, w: 16, h: 16 });
+  Fakegrass.tile = 'X';
+
   fakegrass = new Group();
   fakegrass.collider = 'none';
   fakegrass.w = 16; fakegrass.h = 16;
   fakegrass.spriteSheet = worldImage;
   fakegrass.addAni({ col: 0, row: 1, w: 16, h: 16 });
-  fakegrass.tile = 'X';
+  fakegrass.tile = 'x';
+
 
   sand = new Group();
   sand.collider = 'static';
