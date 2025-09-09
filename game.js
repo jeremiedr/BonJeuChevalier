@@ -385,7 +385,7 @@ if (window.Canvas) {
 
   fakegrass = new Group();
   fakegrass.collider = 'none';
-  fakegrass.w = 16; bush.h = 16;
+  fakegrass.w = 16; fakegrass.h = 16;
   fakegrass.spriteSheet = worldImage;
   fakegrass.addAni({ col: 0, row: 0, w: 16, h: 16 });
   fakegrass.tile = 'X';
