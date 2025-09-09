@@ -93,7 +93,7 @@ let level5 = [
 	'              dddddddddddddd                                             cd d       ',
 	'              ddddc   b                        b  gg  gg  f               d d       ',
 	'  f          gddddc   ggggggg        f      ggggggdd Sddgggggg    b       d d       ',
-	'gggggggMgggggddddddd  dddddddgggMggggggg gggdddddddd gddddddddggggggggggggdcdggggggg',
+	'gggggggMgggggdddddgg  dddddddgggMggggggg gggdddddddd gddddddddggggggggggggdcdggggggg',
 	'dddddddddddddddddddd  dddddddddddddddddd ddddddddddd  dddddddddddddddddddddcdddddddd',
 	'dzd  f   ccc            dddddddddddddddd dddddddddddcFdddddddddddddddddddddcdddddddd',
 	'dgdggcgggggggggggggg     ddddddddddddddd ddddddddddddddddddddddddddddddddddcdddddddd',
