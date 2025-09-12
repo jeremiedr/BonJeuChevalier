@@ -116,7 +116,7 @@ let level6 = [
 	'                                                                                                                             ',
 	'                                                                                                                             ',
 	'                                                                                                                             ',
-	'                                 AAAAAAAAAAAAAA                                                                              ',
+	'                                                                                                                             ',
 	'                                                    c                           p                                            ',
 	'                                                                                     S               p                       ',
 	'                 p      B    S             p                               B  RRRRRRRRRR                                     ',
