@@ -116,11 +116,11 @@ let level6 = [
 	'                                                                                                                             ',
 	'                                                                                                                             ',
 	'                                                                                                                             ',
-	'                                                                                                                             ',
-	'                                                    c                                                                        ',
-	'                                                                                                                             ',
-	'                                                                              RRRRRRRRRR                                     ',
-	'                      RRRRRRRRRRRRRRR                              RRRRRRRRRRRrrrrrrrrrrRRRR                                 ',
+	'                                 AAAAAAAAAAAAAA                                                                              ',
+	'                                                    c                           p                                            ',
+	'                                                                                     S               p                       ',
+	'                 p      B    S             p                               B  RRRRRRRRRR                                     ',
+	'     ccc              RRRRRRRRRRRRRRR                 S        B   RRRRRRRRRRRrrrrrrrrrrRRRR             B       S           ',
 	'RRRRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR',
 	'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
 	'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
@@ -193,7 +193,7 @@ let level10 = [
   ' ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd            ',
 ];
 
-let levels = [level5, level2, level3, level4, level1, level6, level7, level8, level9, level10];
+let levels = [level6, level2, level3, level4, level5, level1, level7, level8, level9, level10];
 
 /* ============================= ASSETS & AUDIO ============================= */
 
@@ -497,6 +497,14 @@ if (window.Canvas) {
   platforms.addAni({ col: 0, row: 0, w: 16, h: 16 });
   platforms.tile = 'P';
   platforms.friction = 1;
+
+  Platforms = new Group();
+  Platforms.collider = 'static';
+  Platforms.w = 16; Platforms.h = 16;
+  Platforms.spriteSheet = PlatformsImage;
+  Platforms.addAni({ col: 0, row: 1, w: 16, h: 16 });
+  Platforms.tile = 'A';
+  Platforms.friction = 1;
 
   coins = new Group();
   coins.collider = 'none';
