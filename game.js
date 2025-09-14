@@ -168,7 +168,7 @@ let level9 = [
   '                   iiii   iiii   iiii   iiii   iiii   iiii                          ',
   '        z       PPP       PPP       PPP       PPP       PPP          z              ', // +7
   '             c     c   c     c   c     c   c     c   c     c                        ',
-  '          PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP                      ',
+  '          gggggggggggggggggggggggggggggggggggggggggggggggggggg                      ',
   '        gdddddddddddddddddddddddddddddddddddddddddddddddddddddddg                   ',
   '   z   gddd            S            S            S            S    dg      z        ', // +9 total
   '       gdd        ggggggggg   ggggggggg   ggggggggg   ggggggggg   dg                ',
