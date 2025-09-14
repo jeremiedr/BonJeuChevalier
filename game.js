@@ -12,7 +12,7 @@ let level1 = [
   '    ggg                    F E       gggg               ggggggggggg        ',
   '                           ggggg                p                          ',
   '       c            z  F  ddddddd                                          ', // +1 z
-  '      ggg             PPP               g      PPP     c                   ',
+  '      ggg             ggg               g      PPP     c                   ',
   '                          b  S  f       dg            ggg                  ',
   ' b   fff   F         ggggggggggggggg    ddg                                ',
   'ggggggggggggg       gddddddddddddddd    dddg             S        F        ',
