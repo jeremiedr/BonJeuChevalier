@@ -66,14 +66,14 @@ let level3 = [
 
 let level4 = [
   '  c                                                                   ccc S         ',
-  '  P                         F            z       cc                  gggggg         ',
+  '  g                         F            z       cc                  gggggg         ',
   '                           ggggg    gggggg    ggggg                                 ',
-  '             P              c                                                       ',
+  '             g              c                                                       ',
   '    c                P      ggggg                                                   ', 
-  '    P   g     g                          S                                          ', 
+  '    g   g     g                          S                                          ', 
   '        d    Sd                         ggg                             ccc         ', 
   '        dgg ggd                                             S                       ',
-  ' P        d d                                      gggggggggggggggg gg ggggg     z  ',
+  ' g        d d                                      gggggggggggggggg gg ggggg     z  ',
   '          d d                                    gddddddddddddddddd dd dddddgggggggg', 
   'f  S c    d d c    S       bbb      z  F   ggggggdddddddddddddddddd dd ddddddddddddd',
   'ggggggggggd dggggggggggggggggggggggggggggggdddddddddddddddddddddddd dd ddddddddddddd',
