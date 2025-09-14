@@ -8,12 +8,12 @@ const ENEMY_SPAWN_OFFSET = 16;   // spawn 1 tuile devant le tireur (éviter les 
 let level1 = [
   '                                                                           ',
   '                   c  S                                                    ',
-  '     f            PPPPPPP     t       b                       FF           ',
-  '    PPP                    F E       PPPP               PPPPPPPPPPP        ',
+  '     f            ggggggg     t       b                       FF           ',
+  '    ggg                    F E       gggg               ggggggggggg        ',
   '                           ggggg                p                          ',
   '       c            z  F  ddddddd                                          ', // +1 z
-  '      PPP             PPP               g      PPP     c                   ',
-  '                          b  S  f       dg            PPP                  ',
+  '      ggg             PPP               g      PPP     c                   ',
+  '                          b  S  f       dg            ggg                  ',
   ' b   fff   F         ggggggggggggggg    ddg                                ',
   'ggggggggggggg       gddddddddddddddd    dddg             S        F        ',
   'ddddddddddddd       ddddddddddddddddg   ddddgggggggggggggggggggggggggg     ',
@@ -66,12 +66,12 @@ let level3 = [
 
 let level4 = [
   '  c                                                                   ccc S         ',
-  '  P                         F            z       cc                  PPPPPP         ',
-  '                           PPPPP    PPPPPP    PPPPP                                 ',
+  '  P                         F            z       cc                  gggggg         ',
+  '                           ggggg    gggggg    ggggg                                 ',
   '             P              c                                                       ',
-  '    c                P      PPPPP                                                   ', 
+  '    c                P      ggggg                                                   ', 
   '    P   g     g                          S                                          ', 
-  '        d    Sd                         PPP                             ccc         ', 
+  '        d    Sd                         ggg                             ccc         ', 
   '        dgg ggd                                             S                       ',
   ' P        d d                                      gggggggggggggggg gg ggggg     z  ',
   '          d d                                    gddddddddddddddddd dd dddddgggggggg', 
@@ -85,11 +85,11 @@ let level4 = [
 
 let level5 = [
 	'                                      ccc                                 cccccz    ',
- 	'                    cFc          f      z  S                                 PPP    ',
-	'                S   f        PPPPPPPPPPPPPPPP                    P        PPP       ',
+ 	'                    cFc          f      z  S                                 ggg    ',
+	'                S   f        gggggggggggggggg                    P        ggg       ',
 	'                  gggggg                                                            ',
 	'              b ggddddddgg                         P                         c      ',
-	'              ggddddddddddgg                                          PPPPPPPP      ',
+	'              ggddddddddddgg                                          gggggggg      ',
 	'              dddddd       d                                                        ',
 	'              ddddc   b                        b  gg  gg  f                         ',
 	'  f          gddddc   ggggggg        f gcg  ggggggdd Sddgggggg    b                 ',
@@ -129,71 +129,71 @@ let level6 = [
 
 let level7 = [
   '                                                                                   ',
-  '                 z                c     c     c                               z     ', // +2
-  '                             PPPPPPPPPPPPP   PPPPP                                 ',
-  '           z        S                                                   S      z    ', // +4
-  '                 PPPPP           M        M        M          PPPPP                 ',
-  '            iiii       iiii   PPPPP   PPPPP   PPPP     iiii         iiii     z     ', // +5
-  '         PPP       PPP       PPP       PPP       PPP        PPP       PPP          ',
+  '                 z                c     c     c                              z     ', // +2
+  '                             ggggggggggggg   ggggg                                 ',
+  '           z        S                                                   S     z    ', // +4
+  '                 ggggg           M        M        M          ggggg                ',
+  '            iiii       iiii   PPPPP   ggggg   gggg     iiii         iiii     z     ', // +5
+  '         ggg       ggg       ggg       ggg       ggg        ggg       ggg          ',
   '        z        c     c     c     c     c     c     c                        F    ', // +6
-  '        S     PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP     S      z        ', // +7 total
-  '              iiii    iiii    iiii    iiii    iiii    iiii                          ',
+  '        S     ggggggggggggggggggggggggggggggggggggggggggggggggg     S      z       ', // +7 total
+  '              iiii    iiii    iiii    iiii    iiii    iiii                         ',
   '       gggggggddddggggddddggggddddggggddddggggddddggggddddgggggggggggggg           ',
   '      gdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddgg         ',
   '      ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd        ',
 ];
 
 let level8 = [
-  '                                                                                   ',
+  '                                                                                    ',
   '   z        c   c   c     c   c   c      c   c   c                     z            ', // +2
-  '       PPPPPPPPPPPPPPP  PPPPPPPPPPPPPPPPPPPPPPPP  PPPPPPPPPPP                       ',
+  '       ggggggggggggggg  gggggggggggggggggggggggggg  ggggggggg                       ',
   '          z          S      S      S      S      S                 z                ', // +4
   '         iiii   iiii    iiii   iiii    iiii   iiii    iiii   iiii                   ',
   '   ggggggddddggggddddggggddddggggddddggggddddggggddddggggddddggggg                  ',
   '  gddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddgg               ',
   ' gddd   c   S   c   S   c   S   c   S   c   S   c   S   c   S   c    z              ', // +5
-  ' gdd   PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  dg           ',
-  ' gdd z    iiii   iiii   iiii   iiii   iiii   iiii   iiii   iiii      dg     z      ', // +7
-  ' gdd   c      c      c      c      c      c      c      c      c   F  dg      z    ', // +8 total
+  ' gdd   ggggg  ggggg  ggggg  ggggg  ggggg  ggggg  ggggg  ggggg  ggggg  dg            ',
+  ' gdd z    iiii   iiii   iiii   iiii   iiii   iiii   iiii   iiii      dg     z       ', // +7
+  ' gdd   c      c      c      c      c      c      c      c      c   F  dg      z     ', // +8 total
   ' gdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddg            ',
   ' ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd            ',
 ];
 
 let level9 = [
-  '                                                                                   ',
+  '                                                                                    ',
   '      z                        c        c        c                           z      ', // +2
-  '                            PPPPP    PPPPP    PPPPP                                 ',
-  '          z              S                                   z              S   z    ', // +5
-  '                      PPPPP      PPPPPPPP         PPPPP                           F ',
-  '                   iiii   iiii   iiii   iiii   iiii   iiii                         ',
+  '                            ggggg    ggggg    ggggg                                 ',
+  '          z              S                                   z              S   z   ', // +5
+  '                      ggggg      gggggggg         ggggg                           F ',
+  '                   iiii   iiii   iiii   iiii   iiii   iiii                          ',
   '        z       PPP       PPP       PPP       PPP       PPP          z              ', // +7
   '             c     c   c     c   c     c   c     c   c     c                        ',
   '          PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP                      ',
   '        gdddddddddddddddddddddddddddddddddddddddddddddddddddddddg                   ',
   '   z   gddd            S            S            S            S    dg      z        ', // +9 total
-  '       gdd        PPPPPPPPP   PPPPPPPPP   PPPPPPPPP   PPPPPPPPP   dg                ',
+  '       gdd        ggggggggg   ggggggggg   ggggggggg   ggggggggg   dg                ',
   '       gdd    c      iiii       iiii         iiii       iiii      dg                ',
-  '       gdd      PPPPP    PPPPP     PPPPP   PPPP    PPPPP     PPPPP dg               ',
+  '       gdd      ggggg     ggggg     ggggg     ggggg     ggggg      dg               ',
   '       gddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddg               ',
   '       ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd              ',
 ];
 
 let level10 = [
-  '                                                                                   ',
+  '                                                                                    ',
   '     z             c   c   c   c       c   c   c   c                         z      ', // 2
-  '            PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP  PPPPP                         ',
+  '            ggggg  ggggg  ggggg  ggggg  ggggg  ggggg  ggggg                         ',
   '    z   S        S        S                 S        S        S          z          ', // +3 => 5
   '      iiii    iiii    iiii    iiiiiiiiiiii    iiii    iiii    iiii                  ',
-  '   PPP   PPP   PPP   PPP   PPP   PPP   PPP   PPP   PPP   PPP   PPP                  ',
-  ' z  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c     z            ', // +2 => 7
-  '   PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP                  ',
+  '   ggg   ggg   ggg   ggg   ggg   ggg   ggg   ggg   ggg   ggg   ggg                  ',
+  ' z  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c  S  c     z             ', // +2 => 7
+  '   ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg                  ',
   '   z      iiii   iiii   iiii   iiii   iiii   iiii   iiii   iiii          z          ', // +2 => 9
   '   c   c       c      c       c      c       c      c       c      c     F     z    ', // +1 => 10
-  ' gggggggggggggggggzgggggggggggggggzggggggggggggggzgggggggggggggggggggg             ',
+  ' gggggggggggggggggzgggggggggggggggzggggggggggggggzgggggggggggggggggggg              ',
   ' ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd            ',
 ];
 
-let levels = [level5, level2, level3, level4, level1, level6, level7, level8, level9, level10];
+let levels = [level1, level2, level3, level4, level5, level6, level7, level8, level9, level10];
 
 /* ============================= ASSETS & AUDIO ============================= */
 
@@ -489,23 +489,7 @@ if (window.Canvas) {
   palmtree.spriteSheet = worldImage;
   palmtree.addAni({ col: 1.25, row: 1, w: 32, h: 64 });
   palmtree.tile = 'p';
-
-  platforms = new Group();
-  platforms.collider = 'static';
-  platforms.w = 16; platforms.h = 16;
-  platforms.spriteSheet = platformsImage;
-  platforms.addAni({ col: 0, row: 0, w: 16, h: 16 });
-  platforms.tile = 'P';
-  platforms.friction = 1;
-
-  Platforms = new Group();
-  Platforms.collider = 'static';
-  Platforms.w = 16; Platforms.h = 16;
-  Platforms.spriteSheet = platformsImage;
-  Platforms.addAni({ col: 0, row: 1, w: 16, h: 16 });
-  Platforms.tile = 'A';
-  Platforms.friction = 1;
-
+  
   coins = new Group();
   coins.collider = 'none';
   coins.w = 16; coins.h = 16;
