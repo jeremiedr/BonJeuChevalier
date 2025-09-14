@@ -501,7 +501,7 @@ if (window.Canvas) {
   Platforms = new Group();
   Platforms.collider = 'static';
   Platforms.w = 16; Platforms.h = 16;
-  Platforms.spriteSheet = PlatformsImage;
+  Platforms.spriteSheet = platformsImage;
   Platforms.addAni({ col: 0, row: 1, w: 16, h: 16 });
   Platforms.tile = 'A';
   Platforms.friction = 1;
