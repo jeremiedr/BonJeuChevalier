@@ -193,7 +193,7 @@ let level10 = [
   ' ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd            ',
 ];
 
-let levels = [level3, level5, level6, level7, level8, level9, level10, level1, level2, level4];
+let levels = [level1, level2, level3, level4, level5, level6, level7, level8, level9, level10];
 
 /* ============================= ASSETS & AUDIO ============================= */
 
