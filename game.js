@@ -26,7 +26,7 @@ let level1 = [
 let level2 = [
   '                             E  F                                          ',
   '                           rrrrrrrrrr                                  z c ', // +1 z
-  '                   p       S cc                                            ',
+  '                   p       S cc                                            ', 
   '                    F     rrrrrrrr            ccc                          ',
   '                 rrrrr                      r rrrr                         ',
   '                                     z  rr rR                S c F         ', // +2 z total
