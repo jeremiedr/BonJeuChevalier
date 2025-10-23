@@ -69,7 +69,7 @@ let level4 = [
   '  g                         F            z       cc                  gggggg         ',
   '                           ggggg    gggggg    ggggg                                 ',
   '             g              c                                                       ',
-  '    c                P      ggggg                                                   ', 
+  '    c                g      ggggg                                                   ', 
   '    g   g     g                          S                                          ', 
   '        d    Sd                         ggg                             ccc         ', 
   '        dgg ggd                                             S                       ',
@@ -133,7 +133,7 @@ let level7 = [
   '                             ggggggggggggg   ggggg                                 ',
   '           z        S                                                   S     z    ', // +4
   '                 ggggg           M        M        M          ggggg                ',
-  '            iiii       iiii   PPPPP   ggggg   gggg     iiii         iiii     z     ', // +5
+  '            iiii       iiii   ggggg   ggggg   gggg     iiii         iiii     z     ', // +5
   '         ggg       ggg       ggg       ggg       ggg        ggg       ggg          ',
   '        z        c     c     c     c     c     c     c                        F    ', // +6
   '        S     ggggggggggggggggggggggggggggggggggggggggggggggggg     S      z       ', // +7 total
@@ -166,7 +166,7 @@ let level9 = [
   '          z              S                                   z              S   z   ', // +5
   '                      ggggg      gggggggg         ggggg                           F ',
   '                   iiii   iiii   iiii   iiii   iiii   iiii                          ',
-  '        z       PPP       PPP       PPP       PPP       PPP          z              ', // +7
+  '        z       ggg       ggg       ggg       ggg       ggg          z              ', // +7
   '             c     c   c     c   c     c   c     c   c     c                        ',
   '          gggggggggggggggggggggggggggggggggggggggggggggggggggg                      ',
   '        gdddddddddddddddddddddddddddddddddddddddddddddddddddddddg                   ',
