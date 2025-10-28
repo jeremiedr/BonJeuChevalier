@@ -113,10 +113,10 @@ let level5 = [
 /* ------------ NIVEAUX 6–10 ---------------- */
 
 let level6 = [
+	'                                                     RRRRRRRRRRR                                                             ',
 	'                                                                                                                             ',
 	'                                                                                                                             ',
-	'                                                                                                                             ',
-	'                                                                                                                             ',
+	'                         RRRRRRRRRRRR                                                                                        ',
 	'                                                    c                           p                                            ',
 	'                                                                                     S               p                       ',
 	'                 p      B    S             p                               B  RRRRRRRRRR                                     ',
