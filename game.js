@@ -96,18 +96,17 @@ let level5 = [
 	'gggggggMgggggdddddgg  dddddddggggggggggdXdggdddddddd gddddddddgggXgggggggggXgggggggg',
 	'dddddddddddddddddddd  ddddddddddddddddddxddddddddddd  dddddddddddxxxxxxFFddcdddddddd',
 	'dzd      ccc            ddddddddddddddddxdddddddddddcFdddddddddddddddddggddcdddddddd',
-	'dgdggcgggggggggggggg     dddddddddddddddxddddddddddddddddddddddddddddddddddcdddddddd',
-	'dddddcddddddddddddddg    cccccccccccccccFcccccccccccccccccccccccccccccccc   dddddddd',
-	'dddddcdddddddddddddddgggggggggggggggggggXggggggggggggggggggggggggggggggggggMdddddddd',
-	'dddddcxddddddddddddddddddddddzzzzzzzzzzdxdzzzzzzzzzzzzzzzzdddzzzzzzzdddddddddddddddd',
-	'dddddM     Fddddddddddddddddddddddddddddxddddddddddddddddddddddddddddddddddddddddddd',
+	'dgdggccggggggggggggg     dddddddddddddddxddddddddddddddddddddddddddddddddddcdddddddd',
+	'dddddccdddddddddddddg    cccccccccccccccFcccccccccccccccccccccccccccccccc   dddddddd',
+	'dddddccddddddddddddddgggggggggggggggggggXggggggggggggggggggggggggggggggggggMdddddddd',
+	'dddddccxdddddddddddddddddddddzzzzzzzzzzdxdzzzzzzzzzzzzzzzzdddzzzzzzzdddddddddddddddd',
+	'dddddMM    Fddddddddddddddddddddddddddddxddddddddddddddddddddddddddddddddddddddddddd',
 	'ddddddddddddddddddddddddddddddddddddddddxddddddddddddddddddddddddddddddddddddddddddd',
 	'ddddxxxxxxxxxxxxxdddddddddddddddddddddddxddddddddddddddddddddddddddddddddddddddddddd',
 	'ddddxxdddddddddxxxxxxxxxdddddddddddddddMxxxxxxxxcddddddddddddddddddddddddddddddddddd',
 	'ddddccMdddddddddddddddxxxxxxxddddddddddddddddxxxxxxxxxxcxddddddddddddddddddddddddddd',
 	'ddddccdddddddddddddddddddddxxxxxxxxxxxxxxxxxxxxdddddddddxddddddddddddddddddddddddddd',
 	'ddddddddddddddddddddddddddddddddddddddddddddddddddddddddxddddddddddddddddddddddddddd',
-	'                                                                                    ',
 	
 ];
 /* ------------ NIVEAUX 6–10 ---------------- */
