@@ -74,13 +74,13 @@ let level4 = [
   '        d    Sd                         ggg                             ccc         ', 
   '        dgg ggd                                             S                       ',
   ' g        d d                                      gggggggggggggggg gg ggggg     z  ',
-  '          d d                                    gddddddddddddddddd dd dddddgggggggg', 
+  '          d d                                    ggdddddddddddddddd dd dddddgggggggg', 
   'f  S c    d d c    S       bbb      z  F   ggggggdddddddddddddddddd dd ddddddddddddd',
   'ggggggggggd dggggggggggggggggggggggggggggggdddddddddddddddddddddddd dd ddddddddddddd',
   'ddddddddddd  dddddddddddddddddddddddddddddddddddddddddddddddddddddd dd ddddddddddddd',
   'dddddddddddg             dddddddddddddddddddddddddddddddddddddddddd dd ddddddddddddd',
   'ddddddddddddggggggggggS              cdzdddddddddddddFccc           dd ddddddddddddd',
-  'ddddddddddddddddddddddggggggggggggggggdgdddddddddddddddddddddddddddddd ddddddddddddd',
+  'ddddddddddddddddddddddggggggggggggggggdgdddddddddddddgggggggggggggggdd ddddddddddddd',
 ];
 
 let level5 = [
@@ -91,8 +91,8 @@ let level5 = [
 	'              b ggddddddgg                         g                         c      ',
 	'              ggddddddddddgg                                          gggggggg      ',
 	'              dddddd       d                                                        ',
-	'              ddddc   b                        b  gg  gg  f                         ',
-	'  f          gddddc   ggggggg        f gcg  ggggggdd Sddgggggg    b                 ',
+	'              ddddc   b                g g     b  gg  gg  f                         ',
+	'  f          gddddc   ggggggg        f dcd  ggggggdd Sddgggggg    b                 ',
 	'gggggggMgggggdddddgg  dddddddggggggggggdXdggdddddddd gddddddddgggXgggggggggXgggggggg',
 	'dddddddddddddddddddd  ddddddddddddddddddxddddddddddd  dddddddddddxxxxxxFFddcdddddddd',
 	'dzd      ccc            ddddddddddddddddxdddddddddddcFdddddddddddddddddggddcdddddddd',
@@ -115,16 +115,16 @@ let level5 = [
 let level6 = [
 	'                                                                     cccc                               B                    ',
 	'                                                               hhhhhrhhhrrrrr                      hhhhhhhhhh                ',
-	'                                                                                      ccF          h                         ',
+	'                                                        s                             ccF     s    h                         ',
 	'                               rrrrrrrrhrhhhhhhhhhhrhhhhhhhr                    rhhhhhhhhhhhhhhr   h                         ',
 	'                                                                                                   hf   Fccc                 ',
 	'                                                    c                           p                  rrrrrrrrr                 ',
 	'                                                                                     S             h        h                ',
-	'                 p      B    S       z     p                               B  rrrrrrrrrr           h                   p     ',
-	'     ccc              rrrrrrrrrrrrrrrcr               S        B   rrrrrrrrrrrRRRRRRRRRRrrrr       h   FB     h  S           ',
+	'                 p      B    S       z     p                         s     B  rrrrrrrrrr           h                   p     ',
+	'     cccs             rrrrrrrrrrrrrrrcr               S        B   rrrrrrrrrrrRRRRRRRRRRrrrr       h   FB     h  S           ',
 	'rrrrrrrrrrrr rrrrrrrrrRRRRRRRRRRRRRRRrRrrr rrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRrrrrr  rrrrrrrrrrrrrrrrrrrrrrrrrr',
 	'RRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
-	'RRRRRRRRRRRR                  ccc          RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
+	'RRRRRRRRRRRR       z          ccc      s   RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
 	'RRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
 ];
 
