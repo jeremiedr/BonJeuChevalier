@@ -116,10 +116,10 @@ let level6 = [
 	'                                                     RRRRRRRRRRR                                                             ',
 	'                                                                                                                             ',
 	'                                                                                                                             ',
-	'                         RRRRRRRRRRRR                                                                                        ',
+	'                         RRRRRRRRRRRRhhhhhhh                                                                                 ',
 	'                                                    c                           p                                            ',
 	'                                                                                     S               p                       ',
-	'                 p      B    S             p                               B !RRRRRRRRRR                                     ',
+	'                 p      B    S             p                               B  RRRRRRRRRR                                     ',
 	'     ccc              RRRRRRRRRRRRRRRzR               S        B   RRRRRRRRRRRrrrrrrrrrrRRRR             B       S           ',
 	'RRRRRRRRRRRR RRRRRRRRRrrrrrrrrrrrrrrrRrRRR RRRRRRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR',
 	'rrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
@@ -524,7 +524,7 @@ if (window.Canvas) {
   surprise.w = 16; suprise.h = 16;
   surprise.spriteSheet = worldImage;
   surprise.addAni({ col: 3, row: 3, w: 16, h: 16 });
-  surprise.tile = '!';
+  surprise.tile = 'h';
 
   // Projectiles ennemis : cinématiques, sans gravité
   enemyBullets = new Group();
