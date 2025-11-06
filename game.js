@@ -521,7 +521,7 @@ if (window.Canvas) {
 
   surprise = new Group();
   surprise.collider = 'static';
-  surprise.w = 16; suprise.h = 16;
+  surprise.w = 16; surprise.h = 16;
   surprise.spriteSheet = worldImage;
   surprise.addAni({ col: 3, row: 3, w: 16, h: 16 });
   surprise.tile = 'h';
