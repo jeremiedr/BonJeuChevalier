@@ -113,19 +113,19 @@ let level5 = [
 /* ------------ NIVEAUX 6–10 ---------------- */
 
 let level6 = [
-	'                                                                    cccc                                                    ',
-	'                                                               hhhhhrhhhrrrrr                                                ',
-	'                                                                                                                             ',
-	'                               rrrrrrrrhrhhhhhhhhhhrhhhhhhhr                                                                 ',
-	'                                                                                                                             ',
-	'                                                    c                           p                                            ',
-	'                                                                                     S               p                       ',
-	'                 p      B    S       z     p                               B  rrrrrrrrrr                                     ',
-	'     ccc              rrrrrrrrrrrrrrrcr               S        B   rrrrrrrrrrrRRRRRRRRRRrrrr             B       S           ',
-	'rrrrrrrrrrrr rrrrrrrrrRRRRRRRRRRRRRRRrRrrr rrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr',
-	'RRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR',
-	'RRRRRRRRRRRR                  ccc          RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR',
-	'RRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR',
+	'                                                                     cccc                                                    ',
+	'                                                               hhhhhrhhhrrrrr                       hhhhhhhhh                ',
+	'                                                                                      ccF           h                        ',
+	'                               rrrrrrrrhrhhhhhhhhhhrhhhhhhhr                    rhhhhhhhhhhhhhhr    h                        ',
+	'                                                                                                    r                        ',
+	'                                                    c                           p                   h                        ',
+	'                                                                                     S              h                        ',
+	'                 p      B    S       z     p                               B  rrrrrrrrrr            h       p                ',
+	'     ccc              rrrrrrrrrrrrrrrcr               S        B   rrrrrrrrrrrRRRRRRRRRRrrrr        h    B       S           ',
+	'rrrrrrrrrrrr rrrrrrrrrRRRRRRRRRRRRRRRrRrrr rrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrr',
+	'RRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRR',
+	'RRRRRRRRRRRR                  ccc          RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRR',
+	'RRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRR',
 ];
 
 let level7 = [
