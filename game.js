@@ -114,7 +114,7 @@ let level5 = [
 
 let level6 = [
 	'                                                                    cccc                                                    ',
-	'                                                               hhhhhhhhhrrrrr                                                ',
+	'                                                               hhhhhrhhhrrrrr                                                ',
 	'                                                                                                                             ',
 	'                               rrrrrrrrhrhhhhhhhhhhrhhhhhhhr                                                                 ',
 	'                                                                                                                             ',
