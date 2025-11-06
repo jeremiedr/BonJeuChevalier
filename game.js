@@ -115,16 +115,16 @@ let level5 = [
 let level6 = [
 	'                                                                     cccc                               B                    ',
 	'                                                               hhhhhrhhhrrrrr                      hhhhhhhhhh                ',
-	'                                                        s                             ccF     s    h                         ',
+	'                                                        S                             ccF     S    h                         ',
 	'                               rrrrrrrrhrhhhhhhhhhhrhhhhhhhr                    rhhhhhhhhhhhhhhr   h                         ',
 	'                                                                                                   hf   Fccc                 ',
 	'                                                    c                           p                  rrrrrrrrr                 ',
 	'                                                                                     S             h        h                ',
-	'                 p      B    S       z     p                         s     B  rrrrrrrrrr           h                   p     ',
+	'                 p      B    S       z     p                         S     B  rrrrrrrrrr           h                   p     ',
 	'     cccs             rrrrrrrrrrrrrrrcr               S        B   rrrrrrrrrrrRRRRRRRRRRrrrr       h   FB     h  S           ',
 	'rrrrrrrrrrrr rrrrrrrrrRRRRRRRRRRRRRRRrRrrr rrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRrrrrr  rrrrrrrrrrrrrrrrrrrrrrrrrr',
 	'RRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
-	'RRRRRRRRRRRR       z          ccc      s   RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
+	'RRRRRRRRRRRR       z          ccc      S   RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
 	'RRRRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR  RRRRRRRRRRRRRRRRRRRRRRRRRR',
 ];
 
