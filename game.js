@@ -599,6 +599,12 @@ function draw() {
   // Vérifie s’il touche un mur à gauche ou à droite
   const touchingLeft  = box.collides(tiles) && box.vel.x < 0;
   const touchingRight = box.collides(tiles) && box.vel.x > 0;
+  const touchingWall = box.collides(tiles) && !touchingFloor;
+
+  if (touchingWall) {
+    // réduire la chute pour un effet de "wall slide"
+    if (box.vel.y > 0) box.vel.y *= 0.7;
+  }
 
   // --- Empêche le joueur de glisser dans les murs ---
   if (touchingLeft || touchingRight) {
@@ -799,7 +805,7 @@ function postProcess() {
   // --- HUD haut droite ---
   textAlign(RIGHT, TOP);
   text('Niveau ' + (currentLevel + 1) + '/' + levels.length, width - 5, 5);
-  text('bombes: ' + bombs, width - 5, 22);
+  text('Bombes: ' + bombs, width - 5, 22);
 
   // --- HUD haut gauche ---
   textAlign(LEFT, TOP);
