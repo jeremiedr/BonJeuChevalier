@@ -222,7 +222,7 @@ let musicVolume = 0.5;
 let isMuted = false;
 
 // === Nouvelle habileté : DOUBLE SAUT ===
-let maxJumps = 2;
+let maxJumps = 1;
 let jumpsLeft = maxJumps;
 
 /* =============================== GAMEPAD PS4 =============================== */
