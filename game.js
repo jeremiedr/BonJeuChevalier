@@ -381,6 +381,7 @@ if (window.Canvas) {
   grass.spriteSheet = worldImage;
   grass.addAni({ col: 0, row: 0, w: 16, h: 16 });
   grass.tile = 'g';
+  grass.friction = 0;
 
   Fakerock = new Group();
   Fakerock.collider = 'none';
@@ -445,7 +446,7 @@ if (window.Canvas) {
   dirt.spriteSheet = worldImage;
   dirt.addAni({ col: 0, row: 1, w: 16, h: 16 });
   dirt.tile = 'd';
-  dirt.friction = 1;
+  dirt.friction = 0;
 
   sign = new Group();
   sign.collider = 'none';
