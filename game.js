@@ -593,19 +593,15 @@ function draw() {
 
   if (coins.length <= 0) changeLevel();
 
-  // Reset double saut si au sol / champignon
-  if (box.colliding(tiles) || box.colliding(Mushroom)) jumpsLeft = maxJumps;
-  
-  // --- Empêche le joueur de coller aux murs : glisse le long d'eux ---
-  if (box.colliding(tiles)) {
-    // Si le joueur pousse horizontalement contre un mur
-    const touchLeft = box.colliding(tiles) && box.vel.x < 0;
-    const touchRight = box.colliding(tiles) && box.vel.x > 0;
+  // Vérifie s’il y a un mur à gauche ou à droite
+  const touchingLeft  = box.collides(tiles) && box.vel.x < 0;
+  const touchingRight = box.collides(tiles) && box.vel.x > 0;
 
-    // Si collision latérale, on annule juste la vitesse horizontale
-    if (touchLeft || touchRight) {
-      box.vel.x = 0;
-    }
+  // S’il touche un mur, on annule la vitesse horizontale
+  if (touchingLeft || touchingRight) {
+    box.vel.x = 0;
+    // Petit décalage pour éviter de rester coincé dans la paroi
+    box.x += touchingLeft ? 0.5 : -0.5;
   }
 
 
@@ -800,7 +796,7 @@ function postProcess() {
   // --- HUD haut gauche ---
   textAlign(LEFT, TOP);
   text('Sous: ' + box.coins, 5, 5);
-  text('vies: ' + box.vies, 5, 22);
+  text('Vies: ' + box.vies, 5, 22);
   //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
   //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
 
