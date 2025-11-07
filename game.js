@@ -593,16 +593,24 @@ function draw() {
 
   if (coins.length <= 0) changeLevel();
 
-  // Vérifie s’il y a un mur à gauche ou à droite
+  // --- Détection des contacts au sol et murs ---
+  const touchingFloor = box.colliding(grass) || box.colliding(dirt) || box.colliding(sand) || box.colliding(Rock) || box.colliding(rock);
+
+  // Vérifie s’il touche un mur à gauche ou à droite
   const touchingLeft  = box.collides(tiles) && box.vel.x < 0;
   const touchingRight = box.collides(tiles) && box.vel.x > 0;
 
-  // S’il touche un mur, on annule la vitesse horizontale
+  // --- Empêche le joueur de glisser dans les murs ---
   if (touchingLeft || touchingRight) {
     box.vel.x = 0;
-    // Petit décalage pour éviter de rester coincé dans la paroi
     box.x += touchingLeft ? 0.5 : -0.5;
   }
+
+  // --- Réinitialise les sauts UNIQUEMENT quand on touche le sol (pas les murs) ---
+  if (touchingFloor) {
+    jumpsLeft = maxJumps;
+  }
+
 
 
 	
@@ -790,7 +798,7 @@ function postProcess() {
 
   // --- HUD haut droite ---
   textAlign(RIGHT, TOP);
-  text('niveau ' + (currentLevel + 1) + '/' + levels.length, width - 5, 5);
+  text('Niveau ' + (currentLevel + 1) + '/' + levels.length, width - 5, 5);
   text('bombes: ' + bombs, width - 5, 22);
 
   // --- HUD haut gauche ---
