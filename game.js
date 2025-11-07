@@ -799,7 +799,7 @@ function postProcess() {
 
   // --- HUD haut gauche ---
   textAlign(LEFT, TOP);
-  text('sous: ' + box.coins, 5, 5);
+  text('Sous: ' + box.coins, 5, 5);
   text('vies: ' + box.vies, 5, 22);
   //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
   //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
