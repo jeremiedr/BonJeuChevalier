@@ -594,7 +594,21 @@ function draw() {
 
   // Reset double saut si au sol / champignon
   if (box.colliding(tiles) || box.colliding(Mushroom)) jumpsLeft = maxJumps;
+  
+  // --- Empêche le joueur de coller aux murs : glisse le long d'eux ---
+  if (box.colliding(tiles)) {
+    // Si le joueur pousse horizontalement contre un mur
+    const touchLeft = box.colliding(tiles) && box.vel.x < 0;
+    const touchRight = box.colliding(tiles) && box.vel.x > 0;
 
+    // Si collision latérale, on annule juste la vitesse horizontale
+    if (touchLeft || touchRight) {
+      box.vel.x = 0;
+    }
+  }
+
+
+	
   // --- Musique ---
   if (kb.presses('m')) { isMuted = !isMuted; if (bgMusic) bgMusic.setVolume(isMuted ? 0 : musicVolume, 0.1); }
   if (kb.presses(']')) { musicVolume = Math.min(1, musicVolume + 0.1); if (bgMusic && !isMuted) bgMusic.setVolume(musicVolume, 0.1); }
