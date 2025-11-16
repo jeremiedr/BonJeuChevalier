@@ -596,6 +596,19 @@ function draw() {
   // --- Détection des contacts au sol et murs ---
   const touchingFloor = box.colliding(grass) || box.colliding(dirt) || box.colliding(sand) || box.colliding(Rock) || box.colliding(rock);
 
+  const touchingWallLeft  = box.collides(tiles) && box.vel.x < 0;
+  const touchingWallRight = box.collides(tiles) && box.vel.x > 0;
+
+  // Wall slide : si touche un mur solide ET est en l'air
+  if ((touchingWallLeft || touchingWallRight) && !touchingFloor) {
+      const WALL_SLIDE_SPEED = 1.5; // vitesse de glisse vers le bas
+      if (box.vel.y < WALL_SLIDE_SPEED) {
+        box.vel.y = WALL_SLIDE_SPEED;
+      }
+  }
+
+	
+
   // Vérifie s’il touche un mur à gauche ou à droite
   const touchingLeft  = box.collides(tiles) && box.vel.x < 0;
   const touchingRight = box.collides(tiles) && box.vel.x > 0;
@@ -809,7 +822,7 @@ function postProcess() {
 
   // --- HUD haut gauche ---
   textAlign(LEFT, TOP);
-  text('Sous: ' + box.coins, 5, 5);
+  text('sous: ' + box.coins, 5, 5);
   text('Vies: ' + box.vies, 5, 22);
   //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
   //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
