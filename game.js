@@ -619,11 +619,11 @@ function draw() {
     if (box.vel.y > 0) box.vel.y *= 0.7;
   }
 
-  // --- Empêche le joueur de glisser dans les murs ---
-  if (touchingLeft || touchingRight) {
+  if ((touchingLeft || touchingRight) && touchingFloor) {
     box.vel.x = 0;
     box.x += touchingLeft ? 0.5 : -0.5;
-  }
+}
+
 
   // --- Réinitialise les sauts UNIQUEMENT quand on touche le sol (pas les murs) ---
   if (touchingFloor) {
@@ -822,7 +822,7 @@ function postProcess() {
 
   // --- HUD haut gauche ---
   textAlign(LEFT, TOP);
-  text('sous: ' + box.coins, 5, 5);
+  text('Sous: ' + box.coins, 5, 5);
   text('Vies: ' + box.vies, 5, 22);
   //text('sauts: ' + Math.max(0, jumpsLeft), 5, 39);
   //text('musique: ' + (isMuted ? 'OFF (M)' : (musicVolume.toFixed(1) + ' (M/[/])')), 5, 56);
